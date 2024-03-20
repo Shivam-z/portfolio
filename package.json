@@ -17,6 +17,8 @@
     "@mui/joy": "^5.0.0-beta.21",
     "@mui/material": "^5.15.3",
     "@mui/styled-engine": "^5.15.3",
+    "@react-pdf/renderer": "^3.4.0",
+    "@slack/bolt": "^3.17.1",
     "framer-motion": "^10.17.9",
     "lottie-react": "^2.4.0",
     "react": "^18.2.0",

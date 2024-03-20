@@ -1,4 +1,5 @@
 import { Avatar, Stack, Typography } from "@mui/material";
+import "../App.css";
 import ProfilePicture from "../assets/dp.jpg";
 const About = () => {
   return (
@@ -14,16 +15,40 @@ const About = () => {
           sx={{ width: 200, height: 200 }}
         />
 
-        <Typography variant="body1" color="#333" textAlign="center">
+        <Typography
+          variant="body1"
+          color="#333"
+          textAlign="center"
+          fontFamily={"Underdog"}
+          fontWeight="400px"
+          fontSize={20}
+          fontStyle={"normal"}
+        >
           Welcome to my personal space! I'm passionate about technology and love
           to create innovative solutions. Currently, I'm exploring the world of
           web development and enjoying every bit of it.
         </Typography>
-        <Typography variant="body1" color="#333" textAlign="center">
+        <Typography
+          variant="body1"
+          color="#333"
+          textAlign="center"
+          fontFamily={"Underdog"}
+          fontWeight="400px"
+          fontSize={20}
+          fontStyle={"normal"}
+        >
           In my free time, you can find me experimenting with new coding
           projects, reading tech blogs, or exploring the outdoors.
         </Typography>
-        <Typography variant="body1" color="#333" textAlign="center">
+        <Typography
+          variant="body1"
+          color="#333"
+          textAlign="center"
+          fontFamily={"Underdog"}
+          fontWeight="400px"
+          fontSize={20}
+          fontStyle={"normal"}
+        >
           Feel free to connect with me on social media or drop me an email. I'm
           always excited to collaborate on interesting projects!
         </Typography>

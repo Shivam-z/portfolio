@@ -1,21 +1,29 @@
 import { Button, Stack } from "@mui/material";
 
-const NAVBAR_ITEMS = [
+export const NAVBAR_ITEMS = [
   {
     name: "Home",
-    path: "/",
+    path: "",
   },
   {
     name: "About",
-    path: "/about",
+    path: "about",
   },
   {
     name: "Skills",
-    path: "/skills",
+    path: "skills",
   },
   {
     name: "Projects",
-    path: "/projects",
+    path: "projects",
+  },
+  {
+    name: "Contact Me",
+    path: "contacts",
+  },
+  {
+    name: "View Resume",
+    path: "resume",
   },
 ];
 
@@ -39,17 +47,14 @@ const NavBar = ({ onClick }: NavBarProps) => {
     >
       {NAVBAR_ITEMS.map((item) => (
         <Button
+          variant={item.path === "resume" ? "contained" : "text"}
           key={item.name}
-          sx={{ color: "grey", textTransform: "none" }}
-          onClick={() => onClick(item.name)}
+          sx={{ textTransform: "none" }}
+          onClick={() => onClick(item.path)}
         >
           {item.name}
         </Button>
       ))}
-
-      <Button variant="contained" color="primary">
-        view resume
-      </Button>
     </Stack>
   );
 };
